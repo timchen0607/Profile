@@ -8,3 +8,4 @@
 
 - HTML/SCSS
 - 此為複習切版作品
+- 此為練習 Git Commit 作品
