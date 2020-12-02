@@ -181,3 +181,14 @@ body {
     font-weight: bold;
   }
 }
+
+.contact {
+  background-color: $c_main;
+
+  &_container {
+    background-color: $c_main;
+    max-width: 1200px - 48px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}
