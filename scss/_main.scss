@@ -10,6 +10,17 @@
   }
 }
 
+@mixin fakeDot {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: $c_sub;
+  border-radius: 50%;
+  position: absolute;
+  @content;
+}
+
 html,
 body {
   font-family: $f_tw;
@@ -45,16 +56,32 @@ body {
     &_en {
       color: $c_light;
       font-size: 1rem;
-      padding: 1.5rem;
+      padding: 0 0.66rem;
     }
   }
   &_dark {
     color: $c_dark;
     border-bottom: 1px solid $c_dark;
     &_en {
-      color: $c_dark;
+      color: $c_stress;
       font-size: 1rem;
-      padding: 1.5rem;
+      padding: 0 0.66rem;
+    }
+  }
+}
+
+.profile {
+  margin-left: 2rem;
+  padding: 0.66rem 0;
+  position: relative;
+
+  &_content {
+    margin-bottom: 1rem;
+  }
+  &::before {
+    @include fakeDot {
+      top: 25px;
+      left: -32px;
     }
   }
 }
