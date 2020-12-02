@@ -130,5 +130,42 @@ body {
 }
 
 .skills {
-  background-color: $c_sub;
+  position: relative;
+
+  .title {
+    width: 100%;
+  }
+
+  &_container {
+    background-color: $c_main;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include pad {
+      width: 80vw;
+    }
+    @include mobile() {
+      width: 90vw;
+    }
+  }
+  &_content {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    color: $c_light;
+    border-left: 1px solid $c_light;
+  }
+  &::after {
+    content: "";
+    background-color: $c_sub;
+    position: absolute;
+    width: 100vw;
+    height: 70%;
+    top: 15%;
+    left: 0;
+    z-index: -1;
+  }
 }
