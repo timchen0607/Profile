@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tim Profile</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/all.min.css" />
   </head>
   <body>
@@ -34,6 +39,55 @@
       <h2 class="title title_light">
         作品集<span class="title_light_en">Portfolio</span>
       </h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img class="box_image" src="./images/ComingSoon.png" />
+            <h3 class="box_title">Coming Soon</h3>
+            <p class="box_text">Coming Soon</p>
+          </div>
+          <div class="swiper-slide box">
+            <img class="box_image" src="./images/ComingSoon.png" />
+            <h3 class="box_title">Coming Soon</h3>
+            <p class="box_text">Coming Soon</p>
+          </div>
+          <div class="swiper-slide box">
+            <img class="box_image" src="./images/ComingSoon.png" />
+            <h3 class="box_title">Coming Soon</h3>
+            <p class="box_text">Coming Soon</p>
+          </div>
+          <div class="swiper-slide box">
+            <img class="box_image" src="./images/ComingSoon.png" />
+            <h3 class="box_title">Coming Soon</h3>
+            <p class="box_text">Coming Soon</p>
+          </div>
+          <div class="swiper-slide box">
+            <img class="box_image" src="./images/ComingSoon.png" />
+            <h3 class="box_title">Coming Soon</h3>
+            <p class="box_text">Coming Soon</p>
+          </div>
+          <div class="swiper-slide box">
+            <img class="box_image" src="./images/ComingSoon.png" />
+            <h3 class="box_title">Coming Soon</h3>
+            <p class="box_text">Coming Soon</p>
+          </div>
+          <div class="swiper-slide box">
+            <img class="box_image" src="./images/ComingSoon.png" />
+            <h3 class="box_title">Coming Soon</h3>
+            <p class="box_text">Coming Soon</p>
+          </div>
+          <div class="swiper-slide box">
+            <img class="box_image" src="./images/ComingSoon.png" />
+            <h3 class="box_title">Coming Soon</h3>
+            <p class="box_text">Coming Soon</p>
+          </div>
+          <div class="swiper-slide box">
+            <img class="box_image" src="./images/ComingSoon.png" />
+            <h3 class="box_title">Coming Soon</h3>
+            <p class="box_text">Coming Soon</p>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="container">
       <h2 class="title title_dark">
@@ -134,5 +188,16 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      let portfolioSwiper = new Swiper(".swiper-container", {
+        centeredSlides: true,
+        spaceBetween: 30,
+        slidesPerView: "auto",
+        loopedSlides: 5,
+        loop: true,
+        autoplay: true,
+      });
+    </script>
   </body>
 </html>

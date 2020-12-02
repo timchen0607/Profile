@@ -96,11 +96,28 @@ body {
 .portfolio {
   background-color: $c_sub;
   margin: 3rem 0;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0;
 
   .title {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .swiper-container {
+    margin-top: 1rem;
+  }
+  .box {
+    max-width: 350px;
+    text-align: center;
+
+    &_image {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    &_text {
+      font-size: 0.8rem;
+      color: lighten($color: $c_dark, $amount: 80%);
+    }
   }
 }
 
