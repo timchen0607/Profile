@@ -1,8 +1,50 @@
+// RWD
+@mixin pad {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+html,
 body {
   font-family: $f_tw;
+  font-size: 24px;
+  line-height: 36px;
 }
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+.name {
+  font-size: 3.5rem;
+  line-height: 2.5rem;
+  padding: 1rem 0;
+  border-bottom: 2px solid $c_dark;
+}
+.portrait {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+.title {
+  font-size: 1.33rem;
+  line-height: 1.25rem;
+  padding: 0.33rem 0;
+
+  &_light {
+    color: $c_light;
+    border-bottom: 1px solid $c_light;
+    text-align: center;
+  }
+  &_dark {
+    color: $c_dark;
+    border-bottom: 1px solid $c_dark;
+  }
 }
