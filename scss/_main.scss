@@ -42,9 +42,19 @@ body {
     color: $c_light;
     border-bottom: 1px solid $c_light;
     text-align: center;
+    &_en {
+      color: $c_light;
+      font-size: 1rem;
+      padding: 1.5rem;
+    }
   }
   &_dark {
     color: $c_dark;
     border-bottom: 1px solid $c_dark;
+    &_en {
+      color: $c_dark;
+      font-size: 1rem;
+      padding: 1.5rem;
+    }
   }
 }
